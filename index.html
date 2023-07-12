@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derivative Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="dydx.png" type="image/x-icon">
+  <script src="https://unpkg.com/mathjs@9.4.4/lib/browser/math.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML-full"></script>
+  <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+</head>
+
+<body>
+  <a href="https://github.com/pb2204" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0"
+      src="Git-Hub.png" alt="Follow Me On GitHub" /></a>
+  <div id="wrapper">
+    <header>
+      <h1>
+        <a href="index.html" id="h1-link">Derivative Calculator</a>
+      </h1>
+      <div>Published: 13/07/2023, Last updated: 13/07/2023</div>
+    </header>
+    <br /><br />
+    <form id="form">
+      <label for="expression">y =</label>
+      &nbsp;
+      <input type="text" id="expression" placeholder="Enter An Expression..." />
+      &nbsp;
+      <input type="submit" value="Go!" />
+    </form>
+    <br /><br />
+    <div>
+      <h4>Derivative:</h4>
+      <br />
+      <div id="derivative"></div>
+      <br />
+      <hr />
+      <h4>Plot:</h4>
+      <br />
+      <div id="plot"></div>
+      <br />
+    </div>
+    <footer>
+      <h2>Instructions for the web version</h2>
+      <div>
+        Use standard mathematical operators and functions for entering the
+        expression.
+      </div>
+      <h2>About Derivative Calculator</h2>
+      <div>
+        Derivative Calculator is a web app written using JavaScript. It uses
+        libraries like math.js and Plotly.js for computing the derivative of
+        the expression and plotting the graphs. Source code of the project is
+        available in my
+        <a href="https://github.com/pb2204/derivative-calculator" target="_blank">GitHub Repo</a>. If you have any
+        questions or ideas for improvements to the
+        Derivative Calculator, don't hesitate to
+        <a href="mailto:rockstarpabitra2204@gmail.com">write me an E-mail</a>.
+      </div>
+      <div class="pab">
+        <center style="
+              background-color: aqua;
+              padding: 10px;
+              margin-top: 10px;
+              border-radius: 10px;
+              font-size: 20px;
+              font-weight: 900;
+            ">
+          Developed By ::
+          <a href="https://pabitrabanerjee.newsgoogle.org"><span
+              style="color: #fc0404; font-family: cursive !important">Pabitra Banerjee</span></a>
+        </center>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
